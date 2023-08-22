@@ -1,4 +1,11 @@
-on: push
+on: 
+  workflow_dispatch:
+    inputs:
+      alphabet:
+        type: string
+        default: abc
+        required: false
+  
 jobs:
    first-job:
      runs-on: windows-latest
